@@ -1,0 +1,29 @@
+:-moz-meter-optimum::-moz-meter-bar {
+
+    color: blue
+}
+
+.simple-selector:-moz-meter-optimum::-moz-meter-bar {
+
+    color: red
+}
+
+.compound.selector:-moz-meter-optimum::-moz-meter-bar {
+
+    color: green
+}
+
+.some .complex.selector:-moz-meter-optimum::-moz-meter-bar {
+
+    color: yellow
+}
+
+.some .selector .list, .of .complex.selectors:-moz-meter-optimum::-moz-meter-bar {
+
+    color: black
+}
+
+.some.other .selector.list:-moz-meter-optimum::-moz-meter-bar, .of .complex.selectors:-moz-meter-optimum::-moz-meter-bar {
+
+    color: white
+}

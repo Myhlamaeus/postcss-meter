@@ -1,0 +1,47 @@
+:meter-optimum::meter-bar {
+  color: blue;
+}
+
+:-moz-meter-optimum::-moz-meter-bar {
+  color: blue;
+}
+
+.simple-selector:meter-optimum::meter-bar {
+  color: red;
+}
+
+.simple-selector:-moz-meter-optimum::-moz-meter-bar {
+  color: red;
+}
+
+.compound.selector:meter-optimum::meter-bar {
+  color: green;
+}
+
+.compound.selector:-moz-meter-optimum::-moz-meter-bar {
+  color: green;
+}
+
+.some .complex.selector:meter-optimum::meter-bar {
+  color: yellow;
+}
+
+.some .complex.selector:-moz-meter-optimum::-moz-meter-bar {
+  color: yellow;
+}
+
+.some .selector .list, .of .complex.selectors:meter-optimum::meter-bar {
+  color: black;
+}
+
+.some .selector .list, .of .complex.selectors:-moz-meter-optimum::-moz-meter-bar {
+  color: black;
+}
+
+.some.other .selector.list:meter-optimum::meter-bar, .of .complex.selectors:meter-optimum::meter-bar {
+  color: white;
+}
+
+.some.other .selector.list:-moz-meter-optimum::-moz-meter-bar, .of .complex.selectors:-moz-meter-optimum::-moz-meter-bar {
+  color: white;
+}

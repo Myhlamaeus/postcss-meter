@@ -1,0 +1,71 @@
+:meter-sub-optimum::meter-bar {
+  color: blue;
+}
+
+:-moz-meter-sub-optimum::-moz-meter-bar {
+  color: blue;
+}
+
+::-webkit-meter-suboptimum-value {
+  color: blue;
+}
+
+.simple-selector:meter-sub-optimum::meter-bar {
+  color: red;
+}
+
+.simple-selector:-moz-meter-sub-optimum::-moz-meter-bar {
+  color: red;
+}
+
+.simple-selector::-webkit-meter-suboptimum-value {
+  color: red;
+}
+
+.compound.selector:meter-sub-optimum::meter-bar {
+  color: green;
+}
+
+.compound.selector:-moz-meter-sub-optimum::-moz-meter-bar {
+  color: green;
+}
+
+.compound.selector::-webkit-meter-suboptimum-value {
+  color: green;
+}
+
+.some .complex.selector:meter-sub-optimum::meter-bar {
+  color: yellow;
+}
+
+.some .complex.selector:-moz-meter-sub-optimum::-moz-meter-bar {
+  color: yellow;
+}
+
+.some .complex.selector::-webkit-meter-suboptimum-value {
+  color: yellow;
+}
+
+.some .selector .list, .of .complex.selectors:meter-sub-optimum::meter-bar {
+  color: black;
+}
+
+.some .selector .list, .of .complex.selectors:-moz-meter-sub-optimum::-moz-meter-bar {
+  color: black;
+}
+
+.some .selector .list, .of .complex.selectors::-webkit-meter-suboptimum-value {
+  color: black;
+}
+
+.some.other .selector.list:meter-sub-optimum::meter-bar, .of .complex.selectors:meter-sub-optimum::meter-bar {
+  color: white;
+}
+
+.some.other .selector.list:-moz-meter-sub-optimum::-moz-meter-bar, .of .complex.selectors:-moz-meter-sub-optimum::-moz-meter-bar {
+  color: white;
+}
+
+.some.other .selector.list::-webkit-meter-suboptimum-value, .of .complex.selectors::-webkit-meter-suboptimum-value {
+  color: white;
+}

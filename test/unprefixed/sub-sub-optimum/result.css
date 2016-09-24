@@ -1,0 +1,23 @@
+:meter-sub-sub-optimum::meter-bar {
+  color: blue;
+}
+
+.simple-selector:meter-sub-sub-optimum::meter-bar {
+  color: red;
+}
+
+.compound.selector:meter-sub-sub-optimum::meter-bar {
+  color: green;
+}
+
+.some .complex.selector:meter-sub-sub-optimum::meter-bar {
+  color: yellow;
+}
+
+.some .selector .list, .of .complex.selectors:meter-sub-sub-optimum::meter-bar {
+  color: black;
+}
+
+.some.other .selector.list:meter-sub-sub-optimum::meter-bar, .of .complex.selectors:meter-sub-sub-optimum::meter-bar {
+  color: white;
+}

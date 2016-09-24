@@ -1,0 +1,23 @@
+::meter-bar {
+  color: blue;
+}
+
+.simple-selector::meter-bar {
+  color: red;
+}
+
+.compound.selector::meter-bar {
+  color: green;
+}
+
+.some .complex.selector::meter-bar {
+  color: yellow;
+}
+
+.some .selector .list, .of .complex.selectors::meter-bar {
+  color: black;
+}
+
+.some.other .selector.list::meter-bar, .of .complex.selectors::meter-bar {
+  color: white;
+}
