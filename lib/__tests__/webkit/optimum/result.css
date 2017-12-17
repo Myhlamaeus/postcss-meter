@@ -1,0 +1,29 @@
+::-webkit-meter-optimum-value {
+
+    color: blue
+}
+
+.simple-selector::-webkit-meter-optimum-value {
+
+    color: red
+}
+
+.compound.selector::-webkit-meter-optimum-value {
+
+    color: green
+}
+
+.some .complex.selector::-webkit-meter-optimum-value {
+
+    color: yellow
+}
+
+.some .selector .list, .of .complex.selectors::-webkit-meter-optimum-value {
+
+    color: black
+}
+
+.some.other .selector.list::-webkit-meter-optimum-value, .of .complex.selectors::-webkit-meter-optimum-value {
+
+    color: white
+}

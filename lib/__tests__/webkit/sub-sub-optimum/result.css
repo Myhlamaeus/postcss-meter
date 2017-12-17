@@ -1,0 +1,29 @@
+::-webkit-meter-even-less-good-value {
+
+    color: blue
+}
+
+.simple-selector::-webkit-meter-even-less-good-value {
+
+    color: red
+}
+
+.compound.selector::-webkit-meter-even-less-good-value {
+
+    color: green
+}
+
+.some .complex.selector::-webkit-meter-even-less-good-value {
+
+    color: yellow
+}
+
+.some .selector .list, .of .complex.selectors::-webkit-meter-even-less-good-value {
+
+    color: black
+}
+
+.some.other .selector.list::-webkit-meter-even-less-good-value, .of .complex.selectors::-webkit-meter-even-less-good-value {
+
+    color: white
+}
