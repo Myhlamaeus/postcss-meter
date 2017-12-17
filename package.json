@@ -1,6 +1,6 @@
 {
   "name": "postcss-meter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Cross-browser meter pseudo-selectors",
   "homepage": "https://github.com/Myhlamaeus/postcss-meter",
   "author": {
@@ -8,10 +8,8 @@
     "email": "dreyer.maltem+dev@gmail.com",
     "url": "https://github.com/Myhlamaeus"
   },
-  "files": [
-    "lib"
-  ],
-  "main": "lib/index.js",
+  "files": ["lib"],
+  "main": "lib/index",
   "keywords": [
     "postcss",
     "meter",
@@ -35,6 +33,9 @@
     "jest": "^21.0.0",
     "jest-cli": "^21.0.0"
   },
+  "engines": {
+    "node": ">=6"
+  },
   "scripts": {
     "prepublish": "nsp check",
     "pretest": "eslint .",
@@ -42,20 +43,11 @@
     "test": "jest"
   },
   "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "git add"
-    ],
-    "*.json": [
-      "prettier --write",
-      "git add"
-    ]
+    "*.js": ["eslint --fix", "git add"],
+    "*.json": ["prettier --write", "git add"]
   },
   "eslintConfig": {
-    "extends": [
-      "xo",
-      "prettier"
-    ],
+    "extends": ["xo", "prettier"],
     "env": {
       "jest": true,
       "node": true
@@ -69,9 +61,7 @@
         }
       ]
     },
-    "plugins": [
-      "prettier"
-    ]
+    "plugins": ["prettier"]
   },
   "repository": "git@github.com:Myhlamaeus/postcss-meter.git",
   "jest": {
@@ -79,6 +69,7 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@std/esm": "^0.18.0"
+    "@std/esm": "^0.18.0",
+    "postcss": "^6.0.14"
   }
 }
